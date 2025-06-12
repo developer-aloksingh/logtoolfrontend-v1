@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log analyser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="./upload/">alok</a>
+    <button id="fetchButton">fetch</button>
+    <p id="data"></p>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Log Analyser</div>
+        <ul class="nav-links">
+            <li><a href="./upload/">Upload File</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Dashboard</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <div class="filter-container">
+                <label for="userFilter">Filter by username: </label>
+                <input type="text" id="userFilter" placeholder="Enter name">
+                <br>
+                <br>
+                <label for="ipFilter">Filter by ip: </label>
+                <input type="text" id="ipFilter" placeholder="Enter ip">
+                <br>
+                <br>
+                <label for="timeFilter">Filter by timestamp: </label>
+                 <input type="text" id="timeFilter" placeholder="Enter time">
+            </div>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1>Welcome to Log data</h1>
+
+        
+        <h2 id="entityNo">no. of entity</h2>
+
+            <div id="tableContainer">
+                <table id="dataTable">
+                  <thead>
+                    <tr id="tableHeader"></tr>
+                  </thead>
+                  <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
