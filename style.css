@@ -103,12 +103,32 @@ body {
     background-color: #3f5872;
 }
 
+.sidebar-menu label{
+    color: black;
+    font-size: 26px;
+    font-weight: 800;
+}
+.sidebar-menu input{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sidebar-menu .timeDuration,.singleFilter{
+    background-color: #3b589864;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+
+
 /* Main Content Styles */
 .main-content {
     margin-left: 400px;
     padding: 80px 2rem 2rem;
     min-height: 100vh;
-    margin-top: 90px;
+    margin-top: 20px;
 
 }
 
@@ -202,3 +222,17 @@ table {
   .filter-container{
     font-size: 20px;
   }
+
+
+
+  .visual{
+    display: flex;
+  }
+
+  .graph { display: flex; justify-content: space-evenly; background-color: #3b589864; padding: 20px; margin: 30px; border-radius: 20px;}
+  canvas { border: 1px solid #000; }
+  #legend { margin-top: 10px; }
+  .legend-item { display: flex; align-items: center; margin-bottom: 5px; }
+  .legend-color { width: 20px; height: 20px; margin-right: 5px; }
+
+  #legendstatus { margin-top: 10px; }
