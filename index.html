@@ -52,6 +52,14 @@
                 <br />
                 <label for="statusFilter">Status: </label>
                 <input type="text" id="statusFilter" placeholder="TCP-miss/200" />
+                <br />
+                <br />
+                <label for="logTypeFilter">LogType: </label>
+                <input type="text" id="logTypeFilter" placeholder="AN_SQUID_LOG/Arrayos" />
+                <br />
+                <br />
+                <label for="otherFilter">Other: </label>
+                <input type="text" id="otherFilter" placeholder="message etc.." />
             </div>
          
 
@@ -83,6 +91,12 @@
           <h2>Status Code</h2>
           <canvas id="myPieChartstatus" width="400" height="400"></canvas>
           <div id="legendstatus"></div>
+        </div>
+
+        <div>
+          <h2>Log Type</h2>
+          <canvas id="myPieChartLogType" width="400" height="400"></canvas>
+          <div id="legendLogType"></div>
         </div>
       </div>
 
